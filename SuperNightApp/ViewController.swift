@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boomLogo: UIImageView!
+    @IBOutlet weak var boomBg: UIImageView!
+    @IBOutlet weak var superButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func makeThatNight(sender: AnyObject) {
+        boomLogo.hidden = false
+        boomBg.hidden = false
+        superButton.hidden = true
+    }
 }
 
